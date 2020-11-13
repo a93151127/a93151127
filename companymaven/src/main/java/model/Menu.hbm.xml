@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="company" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Menu" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="menu">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="r1" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="r1"/>
+        </property>
+        <property generated="never" lazy="false" name="r2" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="r2"/>
+        </property>
+        <property generated="never" lazy="false" name="r3" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="r3"/>
+        </property>
+        <property generated="never" lazy="false" name="r4" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="r4"/>
+        </property>
+        <property generated="never" lazy="false" name="r5" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="r5"/>
+        </property>
+        <property generated="never" lazy="false" name="rsum" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="rsum"/>
+        </property>
+        <property generated="never" lazy="false" name="rsales" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="rsales"/>
+        </property>
+        <property generated="never" lazy="false" name="rcost" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="rcost"/>
+        </property>
+    </class>
+</hibernate-mapping>
